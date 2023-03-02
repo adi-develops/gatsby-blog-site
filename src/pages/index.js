@@ -1,6 +1,7 @@
 // Pages created in the src/pages directory use the name of the file as the route for the page.
 import * as React from 'react'
 import Layout from '../components/layout'
+import { StaticImage } from 'gatsby-plugin-image'
 
 // The Gatsby Link component provides a performance feature called preloading.
 // This means that the resources for the linked page are requested when the link scrolls into view or when the mouse hovers on it.
@@ -13,7 +14,11 @@ const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
       <p>I'm making this by following the Gatsby Tutorial.</p>
-    </Layout>
+      <StaticImage
+        src='../images/clifford.webp'
+        alt='Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera'
+      />
+      </Layout>
   )
 }
 

@@ -2,6 +2,7 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
+import Seo from '../components/seo'
 
 // The Gatsby Link component provides a performance feature called preloading.
 // This means that the resources for the linked page are requested when the link scrolls into view or when the mouse hovers on it.
@@ -23,6 +24,10 @@ const IndexPage = () => {
 }
 
 // You can use the Gatsby Head API by exporting a named function called Head in your pages and page templates
-export const Head = () => <title>Home Page</title>
+export const Head = () => (
+  <>
+    <Seo title='Home Page' />
+  </>
+)
 
 export default IndexPage
